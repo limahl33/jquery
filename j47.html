@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cviceni</title>
+</head>
+<body>
+    <br>
+    <h1 style="margin-left: 100px;">PUJCOVNA - OBJEDNAVKA</h1>
+    <form style="margin-left: 100px;" name="formik" id="formik">
+        <h2>Zadej typ kola: </h2>
+        <div style="margin-left: 20px;">
+        <input type="checkbox" checked="checked" id="horske" name="horske" value=500>
+        <label for="horske">HORSKE 500Kč/den</label><input type="text" id="pocethor" value="2" ><br><br>
+        <input type="checkbox" checked="checked" id="detske" name="detske" value=200>
+        <label for="detske">DETSKE 200Kč/den</label><input type="text" id="pocetdet" value="5" ><br><br>
+        <input type="checkbox" checked="checked" id="silnicni" name="silnicni" value=1500>
+        <label for="silnicni">SILNICNI 1500Kč/den</label><input type="text" id="pocetsil" value="1" ><br><br>
+        <input type="checkbox" checked="checked" id="gravel" name="gravel" value=2500>
+        <label for="gravel">GRAVEL 2500Kč/den</label><input type="text" id="pocetgra" value="1" ><br><br>
+    </div>
+        
+        <h2>Zadej dobu výpůjčky:  </h2>
+        <div style="margin-left: 20px;">
+        <label for="doba">Zvolte dobu půjčení:</label>
+        <select name="doba" id="doba" size="2">
+          <option selected value=5>5 dní</option><br>
+          <option value=7>7 dní</option><br>
+          <option value=14>14 dní</option><br>
+          <option value=30>30 dní</option><br>
+        </select>
+    </div>
+        <br>
+        <h2>Zadej typ nosiče:  </h2>
+        <div style="margin-left: 20px;">
+        <input type="radio" id="stresni" name="nosic" value="stresni">
+        <label for="stresni">STŘEŠNÍ NOSIČ</label><br>
+        <input type="radio" id="tazne" name="nosic" value="tazne">
+        <label for="tazne">CYKLONOSIČ NA TAŽNÉ ZAŘÍZENÍ</label><br>
+        <input type="radio" checked="checked" id="bez" name="nosic" value="bez">
+        <label for="bez">BEZ NOSIČE</label>
+    </div>
+    </form>
+        
+    <br><br>
+    <form style="margin-left: 100px;" name="f_vysledek" id="f_vysledek">
+        <input type="button" id="vyslbut" value="SPOČÍTAT CELKOVOU CENU">
+        <input type="text" name="f_soucet" id="f_soucet">
+    </form>
+        <br><br>
+    
+    <form style="margin-left: 100px;" name="f_kontrola">
+        <h3>Kolik jste ochoten zaplatit?</h3>
+        <div style="margin-left: 20px;">
+        <input type="text" name="f_limit" id="f_limit"><br><br>
+        <input type="button" id="kontbut" value="STISKNI PRO KONTROLU CENY">
+        <h2><div id="kontvysl"></div></h2>
+    </div>
+    </form>
+    <br>
+    <form style="margin-left: 100px;" name="formx">
+        <h3>Pro odeslání objednávky zadejte svůj email:</h3>
+        <div style="margin-left: 20px;">
+            <textarea id="textx" rows=1 cols=30></textarea>
+        <input type="button" id="odesbut" value="ODESLAT FORMULÁŘ">
+        <h2><div id="odeslani"></div></h2>
+    </div>
+    </form>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main47.js"></script>
+</body>
+</html>
